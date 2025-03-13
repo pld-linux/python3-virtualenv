@@ -9,7 +9,7 @@ Summary:	Tool to create isolated Python environments
 Summary(pl.UTF-8):	Narzędzie do tworzenia oddzielonych środowisk Pythona
 Name:		python3-virtualenv
 Version:	20.29.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages
 #Source0Download: https://pypi.org/simple/virtualenv/
@@ -32,8 +32,6 @@ BuildRequires:	python3-filelock < 4
 BuildRequires:	python3-platformdirs >= 2
 BuildRequires:	python3-platformdirs < 3
 BuildRequires:	python3-pytest
-BuildRequires:	python3-six >= 1.9
-BuildRequires:	python3-six < 2
 # test-only dependencies
 BuildRequires:	python-coverage >= 4
 BuildRequires:	python-coverage-enable-subprocess >= 1
@@ -61,7 +59,6 @@ Requires:	python3-modules >= 1:3.8
 Requires:	python3-platformdirs >= 2
 # for virtualenv-3 wrapper
 Requires:	python3-setuptools
-Requires:	python3-six >= 1.9
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

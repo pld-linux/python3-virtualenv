@@ -18,11 +18,11 @@ Source0:	https://files.pythonhosted.org/packages/source/v/virtualenv/virtualenv-
 Patch0:		multilib.patch
 URL:		https://pypi.org/project/virtualenv/
 BuildRequires:	python3 >= 1:3.8
-BuildRequires:	python3-modules >= 1:3.8
-BuildRequires:	python3-hatchling
 BuildRequires:	python3-build
+BuildRequires:	python3-hatch-vcs
+BuildRequires:	python3-hatchling
 BuildRequires:	python3-installer
-BuildRequires:	python3-hatch_vcs
+BuildRequires:	python3-modules >= 1:3.8
 %if %{with tests}
 # runtime dependencies
 BuildRequires:	python3-distlib >= 0.3.1
